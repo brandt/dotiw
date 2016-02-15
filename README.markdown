@@ -167,6 +167,14 @@ If you want to calculate a distance of time in percent, use `distance_of_time_in
     distance_of_time_in_percent("04-12-2009".to_time, "29-01-2010".to_time, "04-12-2010".to_time, options)
     
 
+## Using with Plain Ruby
+
+    require 'time'
+    a = Time.parse('2015-02-14 18:55:22 -0700')
+    b = Time.parse('2017-02-14 18:55:22 -0700')
+    DOTIW::TimeHash.new(nil, a, b, {}).to_hash  #=> {:years => 2, :months => 0, :days => 0}
+
+
 ## Contributors
 
 * [chendo](http://github.com/chendo) - for talking through it with me and drawing on the whiteboard
