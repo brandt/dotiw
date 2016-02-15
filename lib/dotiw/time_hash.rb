@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require 'active_support/all'
+
 module DOTIW
   class TimeHash
     TIME_FRACTIONS = [:seconds, :minutes, :hours, :days, :months, :years]
